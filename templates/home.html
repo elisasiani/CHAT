@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block content %}
+<form method="post" class="buttons" style="border:2px solid black; padding:20px; background-color:azure ;">
+  <h3 style="font-size:3em; font-family:'Times New Roman', Times, serif; text-align: center;">Entre no Chat</h3>
+  <div>
+    <label style="font-size:1.5em; font-family:'Times New Roman', Times, serif;">Nome:</label>
+    <input style="width: 255px; height:26px;"
+      type="text"
+      placeholder="Pick a name!"
+      name="name"
+      value="{{name}}"
+    />
+  </div>
+  <br>
+  <div class="join">
+    <label style="font-size:1.5em; font-family:'Times New Roman', Times, serif;">Insira o código:</label>
+    <input type="text" style="height:26px;" placeholder="Room Code" name="code" value="{{code}}" />
+    <button type="submit" style="height:30px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color:white;" name="join">Entrar</button>
+  </div>
+  <br>
+  <button type="submit" style="height:30px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color:white;" name="create" class="create-btn">Criar a sala</button>
+  {% if error %}
+  <ul>
+    <li>{{error}}</li>
+  </ul>
+  {% endif %}
+</form>
+{% endblock %}

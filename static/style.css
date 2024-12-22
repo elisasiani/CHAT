@@ -1,0 +1,65 @@
+body {
+    font-family: sans-serif; /* Set a default font for the body */
+    margin: 0; /* Remove default body margins */
+    display: flex; /* Allow centering of content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically (may need adjustment) */
+    min-height: 100vh; /* Set minimum height for full viewport coverage */
+    background-image: url("/CHAT/img/imagem_fundo.jpg");
+  }
+  
+  .welcome-message {
+    text-align: center; /* Center the welcome message */
+    font-size: 2em; /* Increase welcome message size */
+    margin-bottom: 2rem; /* Add some space after the message */
+    background-image: url("/img/imagem_fundo.jpg");
+  }
+  
+  .chat-form {
+    background-color: #eee; /* Light background color for the form */
+    padding: 2rem; /* Add some padding for better readability */
+    border-radius: 5px; /* Rounded corners for a cleaner look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack form elements vertically */
+    width: 300px; /* Set a fixed width for the form */
+    background-image: url("/img/imagem_fundo.jpg");
+}
+
+.chat-form label {
+  font-weight: bold; /* Make labels bold for better distinction */
+  margin-bottom: 5px; /* Add a bit of space between labels and inputs */
+  background-image: url("/img/imagem_fundo.jpg");
+}
+
+.chat-form input,
+.chat-form button {
+  padding: 10px; /* Add padding to inputs and buttons */
+  border: 1px solid #ccc; /* Light border for inputs and buttons */
+  border-radius: 3px; /* Rounded corners for a cleaner look */
+  margin-bottom: 10px; /* Add spacing between elements */
+  width: 100%; /* Make inputs and buttons fill the available width */
+  background-image: url("/img/imagem_fundo.jpg");
+}
+
+.chat-form button {
+  background-color: #4CAF50; /* Green background color */
+color: white; /* White text color */
+cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.chat-form button:hover {
+background-color: #3e8e41; /* Darker green on hover */
+}
+
+.h3{
+    display: block;
+    font-size: 3em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
